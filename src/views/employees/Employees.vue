@@ -139,11 +139,13 @@ let classStyles =
             </div>
           </div>
 
-          <div class="flex flex-wrap justify-start items-center mx-10">
+          <div class="flex flex-wrap justify-around items-center">
             <div class="mb-3">
               <label class="block mb-2 font-JakartaSans font-medium text-sm" for="phones">Phone</label>
               <input type="text" name="phones" id="phones" :class="classStyle" disabled :value="employee?.phone" />
             </div>
+
+            <div class="w-96"></div>
           </div>
         </div>
       </div>
@@ -161,7 +163,7 @@ let classStyles =
         />
         <div class="collapse-title text-xl font-medium">Employee Info</div>
         <div class="collapse-content" v-if="isCollapseEmployee">
-          <div class="flex flex-wrap justify-start items-center gap-2">
+          <div class="flex flex-wrap justify-start items-center gap-2 mx-10">
             <button class="btn btn-info btn-sm" @click="editData" v-if="!isDisabled">
               <span><font-awesome-icon :icon="['fas', 'pen-to-square']" style="color: #ffffff" /></span>
             </button>
@@ -328,7 +330,7 @@ let classStyles =
             </div>
           </div>
 
-          <div class="flex flex-wrap justify-start items-center mx-10">
+          <div class="flex flex-wrap justify-around items-center mx-10">
             <div class="mb-3">
               <label class="block mb-2 font-JakartaSans font-medium text-sm" for="resign">Resign Tender Date</label>
               <input
@@ -340,6 +342,8 @@ let classStyles =
                 v-model="employee.resign_tender_date"
               />
             </div>
+
+            <div class="w-96"></div>
           </div>
         </div>
       </div>

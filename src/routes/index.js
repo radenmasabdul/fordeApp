@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../views/Home.vue';
 import EmployeeList from '../views/employees/EmployeeList.vue';
 import Employees from '../views/employees/Employees.vue';
+import NotFound from '../views/NotFound.vue';
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -29,6 +30,14 @@ const router = createRouter({
             component: Employees,
             meta: {
                 title: "Employees",
+            },
+        },
+        {
+            path: "/:pathMatch(.*)*",
+            name: "notfoundpages",
+            component: NotFound,
+            meta: {
+                title: "Not Found",
             },
         },
     ]
