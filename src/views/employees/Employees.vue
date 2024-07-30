@@ -1,6 +1,5 @@
 <script setup>
 import Layout from "../../layout/Layout.vue";
-import Logo from "../../assets/logo.jpg";
 
 import { ref, onBeforeMount } from "vue";
 import { useRoute } from "vue-router";
@@ -25,6 +24,7 @@ onBeforeMount(() => {
     employee.value = { ...employeeData }; // salin data untuk edit
     originalEmployeeData.value = { ...employeeData }; // original data
   }
+  // console.log("employeeData:", employeeData);
 });
 
 const editData = () => {
@@ -81,7 +81,7 @@ let classStyles =
     <div class="flex flex-wrap justify-around mx-4 my-4 gap-2 bg-base">
       <div class="avatar">
         <div class="w-32 rounded-full">
-          <img :src="Logo" />
+          <img :src="employee?.image_url" />
         </div>
       </div>
 

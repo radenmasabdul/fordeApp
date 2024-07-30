@@ -17,7 +17,8 @@
         "employee_status": "Active",
         "exit_reason": null,
         "exit_date": null,
-        "resign_tender_date": null
+        "resign_tender_date": null,
+        "image_url": "https://raw.githubusercontent.com/radenmasabdul/logo/main/harryPotterCharacter/Hermione%20Granger.jpg"
       },
       {
         "id": 2,
@@ -36,7 +37,9 @@
         "employee_status": "Active",
         "exit_reason": null,
         "exit_date": null,
-        "resign_tender_date": null
+        "resign_tender_date": null,
+        "image_url": "https://raw.githubusercontent.com/radenmasabdul/logo/main/harryPotterCharacter/Harry%20Potter.jpg"
+
       },
       {
         "id": 3,
@@ -55,7 +58,8 @@
         "employee_status": "Active",
         "exit_reason": null,
         "exit_date": null,
-        "resign_tender_date": null
+        "resign_tender_date": null,
+        "image_url": "https://raw.githubusercontent.com/radenmasabdul/logo/main/harryPotterCharacter/Ron%20Weasley.jpg"
       },
       {
         "id": 4,
@@ -74,7 +78,8 @@
         "employee_status": "Active",
         "exit_reason": null,
         "exit_date": null,
-        "resign_tender_date": null
+        "resign_tender_date": null,
+        "image_url": "https://raw.githubusercontent.com/radenmasabdul/logo/main/harryPotterCharacter/Ginny%20Weasley.jpg"
       },
       {
         "id": 5,
@@ -93,7 +98,8 @@
         "employee_status": "Active",
         "exit_reason": null,
         "exit_date": null,
-        "resign_tender_date": null
+        "resign_tender_date": null,
+        "image_url": "https://raw.githubusercontent.com/radenmasabdul/logo/main/harryPotterCharacter/Luna%20Lovegood.jpg"
       },
       {
         "id": 6,
@@ -112,7 +118,8 @@
         "employee_status": "Active",
         "exit_reason": null,
         "exit_date": null,
-        "resign_tender_date": null
+        "resign_tender_date": null,
+        "image_url": "https://raw.githubusercontent.com/radenmasabdul/logo/main/harryPotterCharacter/Neville%20Longbottom.jpg"
       },
       {
         "id": 7,
@@ -131,7 +138,8 @@
         "employee_status": "Active",
         "exit_reason": null,
         "exit_date": null,
-        "resign_tender_date": null
+        "resign_tender_date": null,
+        "image_url": "https://raw.githubusercontent.com/radenmasabdul/logo/main/harryPotterCharacter/Draco%20Malfoy.jpg"
       },
       {
         "id": 8,
@@ -150,7 +158,8 @@
         "employee_status": "Active",
         "exit_reason": null,
         "exit_date": null,
-        "resign_tender_date": null
+        "resign_tender_date": null,
+        "image_url": "https://raw.githubusercontent.com/radenmasabdul/logo/main/harryPotterCharacter/Cho%20Chang.jpg"
       },
       {
         "id": 9,
@@ -169,7 +178,8 @@
         "employee_status": "Active",
         "exit_reason": null,
         "exit_date": null,
-        "resign_tender_date": null
+        "resign_tender_date": null,
+        "image_url": "https://raw.githubusercontent.com/radenmasabdul/logo/main/harryPotterCharacter/Cedric%20Diggory.jpg"
       },
       {
         "id": 10,
@@ -188,7 +198,8 @@
         "employee_status": "Active",
         "exit_reason": null,
         "exit_date": null,
-        "resign_tender_date": null
+        "resign_tender_date": null,
+        "image_url": "https://raw.githubusercontent.com/radenmasabdul/logo/main/harryPotterCharacter/Seamus%20Finnigan.jpg"
       },
       {
         "id": 11,
@@ -207,7 +218,8 @@
         "employee_status": "Active",
         "exit_reason": null,
         "exit_date": null,
-        "resign_tender_date": null
+        "resign_tender_date": null,
+        "image_url": "https://raw.githubusercontent.com/radenmasabdul/logo/main/harryPotterCharacter/Dean%20Thomas.jpg"
       }
     ]
   }
