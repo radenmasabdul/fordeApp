@@ -45,15 +45,12 @@ const paginatedUsers = computed(() => {
 });
 
 const filterData = () => {
-  employeeStore.setSearchKeyword(searchKeyword.value);
   employeeStore.setFilterStatus(selectedStatus.value);
 };
 
 const resetData = () => {
-  searchKeyword.value = "";
-  employeeStore.setSearchKeyword("");
-  selectedStatus.value = ""; // Reset status
-  employeeStore.setFilterStatus(""); // Menghapus filter status
+  selectedStatus.value = "";
+  employeeStore.setFilterStatus("");
 };
 
 const inputClass =
@@ -144,7 +141,7 @@ let classStyles =
       </Table>
     </div>
 
-    <div v-else>
+    <div class="mx-5 my-2" v-else>
       <Table>
         <thead class="text-center bg-blue-600">
           <tr>
