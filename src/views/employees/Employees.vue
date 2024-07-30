@@ -248,7 +248,7 @@ let classStyles =
                 <option value="3">3 Years</option>
                 <option value="4">4 Years</option>
                 <option value="5">5 Years</option>
-                <option value="6+">6+ Years</option>
+                <option value="6">6+ Years</option>
               </select>
             </div>
 

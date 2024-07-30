@@ -7,10 +7,30 @@ export const useemployeeStore = defineStore('employee', {
     state: () => ({
         dataEmployee: JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)) || initialData.dataEmployee,
         isLoading: false,
+        search: "",
+        filterStatus: "",
     }),
     getters: {
         getDataEmployee(state) {
             return state.dataEmployee;
+        },
+        filtersDataEmployee(state) {
+            // console.log('Filtering employees:', state.dataEmployee);
+            return state.dataEmployee.filter(data => {
+                const fullname = data?.fullname?.toLowerCase() || "";
+                const position = data?.position?.toLowerCase() || "";
+                const departement = data?.departement?.toLowerCase() || "";
+                const employee_status = data?.employee_status?.toLowerCase() || "";
+
+                const matchesSearch = fullname.includes(state.search.toLowerCase()) ||
+                    position.includes(state.search.toLowerCase()) ||
+                    departement.includes(state.search.toLowerCase()) ||
+                    employee_status.includes(state.search.toLowerCase());
+
+                const matchesStatus = state.filterStatus ? employee_status === state.filterStatus.toLowerCase() : true;
+
+                return matchesSearch && matchesStatus;
+            });
         }
     },
     actions: {
@@ -29,7 +49,16 @@ export const useemployeeStore = defineStore('employee', {
 
             this.isLoading = true;
 
-            this.isLoading = false;
+            // Simulate fetching data
+            setTimeout(() => {
+                this.isLoading = false;
+            }, 1000);
+        },
+        setSearchKeyword(keyword) {
+            this.search = keyword;
+        },
+        setFilterStatus(status) {
+            this.filterStatus = status;
         }
     }
 });
