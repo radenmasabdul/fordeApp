@@ -43,23 +43,38 @@ let classStyle =
         <input type="radio" name="my-accordion-2" checked="checked" class="cursor-pointer" />
         <div class="collapse-title text-xl font-medium">Personal Info</div>
         <div class="collapse-content" v-if="isCollapsePersonal">
-          <h1>Name : <span class="font-JakartaSans text-base font-bold text-black">Samantha Williams</span></h1>
-          <h1>
-            Employee Identification Number :
-            <span class="font-JakartaSans text-base font-bold text-black">9909922</span>
-          </h1>
-          <h1>
-            Departement :
-            <span class="font-JakartaSans text-base font-bold text-black">Sales & Marketing</span>
-          </h1>
-          <h1>
-            Position :
-            <span class="font-JakartaSans text-base font-bold text-black">Marketing Manager</span>
-          </h1>
-          <h1>
-            Phone :
-            <span class="font-JakartaSans text-base font-bold text-black">081290568739</span>
-          </h1>
+          <div class="flex flex-wrap justify-around items-center pt-4">
+            <div class="mb-3">
+              <label class="block mb-2 font-JakartaSans font-medium text-sm" for="names">Name</label>
+              <input type="text" id="names" name="names" :class="classStyle" disabled />
+            </div>
+
+            <div class="mb-3">
+              <label class="block mb-2 font-JakartaSans font-medium text-sm" for="en"
+                >Employee Identification Number</label
+              >
+              <input type="text" id="en" name="en" :class="classStyle" disabled />
+            </div>
+          </div>
+
+          <div class="flex flex-wrap justify-around items-center pt-4">
+            <div class="mb-3">
+              <label class="block mb-2 font-JakartaSans font-medium text-sm" for="dept">Departement</label>
+              <input type="text" id="dept" name="dept" :class="classStyle" disabled />
+            </div>
+
+            <div class="mb-3">
+              <label class="block mb-2 font-JakartaSans font-medium text-sm" for="pos">Position</label>
+              <input type="text" id="pos" name="pos" :class="classStyle" disabled />
+            </div>
+          </div>
+
+          <div class="flex flex-wrap justify-start items-center mx-10">
+            <div class="mb-3">
+              <label class="block mb-2 font-JakartaSans font-medium text-sm" for="phones">Phone</label>
+              <input type="text" name="phones" id="phones" :class="classStyle" disabled />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -167,7 +182,7 @@ let classStyle =
             </div>
           </div>
 
-          <div class="flex flex-wrap justify-start items-center ml-10">
+          <div class="flex flex-wrap justify-start items-center mx-10">
             <div class="mb-3">
               <label class="block mb-2 font-JakartaSans font-medium text-sm" for="resign">Resign Tender Date</label>
               <input type="text" name="resign" id="resign" :class="classStyle" disabled />
