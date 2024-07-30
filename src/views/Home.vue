@@ -1,11 +1,16 @@
 <script setup>
 import Layout from "../layout/Layout.vue";
+import ChartReports from "../components/dashboard/ChartReports.vue";
+import ChartUser from "../components/dashboard/ChartUser.vue";
 </script>
 
 <template>
   <Layout>
     <div class="py-2">
-      <h1 class="text-red-500 text-2xl font-JakartaSans">INI MENU DASHBOARD</h1>
+      <div class="flex flex-wrap justify-center items-center gap-4">
+        <ChartReports />
+        <ChartUser />
+      </div>
     </div>
   </Layout>
 </template>
