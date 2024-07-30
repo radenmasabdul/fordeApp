@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 import Home from '../views/Home.vue';
+import EmployeeList from '../views/employees/EmployeeList.vue';
 import Employees from '../views/employees/Employees.vue';
 
 const router = createRouter({
@@ -17,6 +18,14 @@ const router = createRouter({
         {
             path: "/employees",
             name: "employees",
+            component: EmployeeList,
+            meta: {
+                title: "Employees",
+            },
+        },
+        {
+            path: "/employees_details/:id",
+            name: "employees_details",
             component: Employees,
             meta: {
                 title: "Employees",
@@ -29,6 +38,5 @@ router.beforeEach((to, from, next) => {
     document.title = `AL Company || ${to.meta.title}`;
     next();
 });
-
 
 export default router;

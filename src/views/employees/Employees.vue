@@ -1,6 +1,7 @@
 <script setup>
 import Layout from "../../layout/Layout.vue";
 import Logo from "../../assets/logo.jpg";
+
 import { ref } from "vue";
 
 const isCollapsePersonal = ref(true);
@@ -118,8 +119,8 @@ let classStyle =
               <label class="block mb-2 font-JakartaSans font-medium text-sm" for="type">Type of Contract</label>
               <select name="type" id="type" :class="classStyle" disabled>
                 <option></option>
-                <option value="pkwt">PKWT</option>
-                <option value="pkwtt">PKWTT</option>
+                <option value="PKWT">PKWT</option>
+                <option value="PKWTT">PKWTT</option>
               </select>
             </div>
           </div>
@@ -142,9 +143,9 @@ let classStyle =
               <label class="block mb-2 font-JakartaSans font-medium text-sm" for="recruitment">Recruitment Type</label>
               <select name="recruitment" id="recruitment" :class="classStyle" disabled>
                 <option></option>
-                <option value="linkedin">LinkedIn</option>
-                <option value="glints">Glints</option>
-                <option value="jobstreet">Job Street</option>
+                <option value="LinkedIn">LinkedIn</option>
+                <option value="Glints">Glints</option>
+                <option value="JobStreet">Job Street</option>
               </select>
             </div>
           </div>
@@ -160,7 +161,7 @@ let classStyle =
               <select name="status" id="status" :class="classStyle" disabled>
                 <option></option>
                 <option value="active">Active</option>
-                <option value="nonactive">Non Active</option>
+                <option value="non_active">Non Active</option>
               </select>
             </div>
           </div>

@@ -11,6 +11,8 @@ const pageTitle = computed(() => {
     case "home":
       return "Dashboard";
     case "employees":
+      return "Employee";
+    case "employees_details":
       return "Employee Details";
   }
 });
