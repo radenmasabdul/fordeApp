@@ -22,7 +22,7 @@ let classStyle =
 <template>
   <div class="navbar bg-base-200">
     <div class="flex-1">
-      <a class="font-JakartaSans font-bold text-2xl">{{ pageTitle }}</a>
+      <a class="font-JakartaSans font-bold text-lg">{{ pageTitle }}</a>
     </div>
     <div class="flex-none gap-2">
       <select name="filter" id="filter" :class="classStyle">
