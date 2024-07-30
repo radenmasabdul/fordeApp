@@ -15,14 +15,14 @@ const iconClass = "text-blue-500 flex-shrink-0 w-5 h-5";
       <label for="my-drawer-2" aria-label="close sidebar" class="drawer-overlay"></label>
       <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
         <li>
-          <router-link to="#">
+          <router-link to="/">
             <font-awesome-icon :icon="['fas', 'chart-pie']" :class="iconClass" />
             <span :class="textClass">Dashboard</span>
           </router-link>
         </li>
 
         <li>
-          <router-link to="#">
+          <router-link to="/employees">
             <font-awesome-icon :icon="['fas', 'book']" :class="iconClass" />
             <span :class="textClass">Employees</span>
           </router-link>

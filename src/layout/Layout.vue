@@ -10,7 +10,7 @@ import Content from "../components/layout/Content.vue";
     <div class="flex flex-col flex-grow">
       <Navbar />
 
-      <div class="h-full">
+      <div class="h-full bg-base-200">
         <Content>
           <slot></slot>
         </Content>
